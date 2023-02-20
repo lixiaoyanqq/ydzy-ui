@@ -1,0 +1,12 @@
+{
+  "name": "ydzy-ui",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": ["es", "lib"],
+  "keywords": ["ydzy-ui", "vue3组件库", "永鼎致远", "永鼎"],
+  "author": "dbkey",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts"
+}
