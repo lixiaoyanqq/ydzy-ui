@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:16:41
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-17 13:44:03
+ * @LastEditTime: 2023-02-21 15:26:40
  */
 import {createApp} from 'vue'
 import App from './app.vue'
@@ -12,8 +12,8 @@ import App from './app.vue'
 
 const app = createApp(App)
 
-import ydzyui from "ydzy-ui"
-import { Button } from 'ydzy-ui'
+import ydzyui from "ydzy-ui/packages/components"
+// import { Button } from 'ydzy-ui'
 app.use(ydzyui)
 // app.use(Button)
 

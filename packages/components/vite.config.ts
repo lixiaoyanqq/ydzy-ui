@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-02-10 10:10:16
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-17 11:54:17
+ * @LastEditTime: 2023-02-22 11:29:53
  */
 
 
@@ -25,7 +25,7 @@ export default defineConfig(
             cssCodeSplit: true,
             rollupOptions: {
                 //忽略打包vue文件
-                external: ['vue', /\.less/],
+                external: ['vue', /\.less/, '@kitty-ui/utils'],
                 input: ['src/index.ts'],
                 output: [
                     {
@@ -38,7 +38,7 @@ export default defineConfig(
                         //配置打包根目录
                         // dir: 'es',
                         exports: 'named',
-                        preserveModulesRoot: 'src',
+                        // preserveModulesRoot: 'src',
                         //配置打包根目录
                         dir: resolve(__dirname, './ydzy-ui/es'),
                     },
@@ -58,7 +58,7 @@ export default defineConfig(
             emptyOutDir: false,
             lib: {
                 entry: './index.ts',
-                formats: ['es', 'cjs'],
+                // formats: ['es', 'cjs'],
                 name: 'ydzy',
             }
         },
@@ -66,6 +66,7 @@ export default defineConfig(
             vue(),
             DefineOptions(),
             dts({
+              entryRoot: 'src',
               outputDir: [
                 resolve(__dirname, './ydzy-ui/es/src'),
                 resolve(__dirname, './ydzy-ui/lib/src')
@@ -74,10 +75,6 @@ export default defineConfig(
               tsConfigFilePath: '../../tsconfig.json'
             }),
             //因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
-            dts({
-              outputDir: resolve(__dirname, './ydzy-ui/lib/src'),
-              tsConfigFilePath: '../../tsconfig.json'
-            }),
             {
               name: 'style',
               generateBundle(config, bundle) {
@@ -100,9 +97,9 @@ export default defineConfig(
             '@': resolve(__dirname, 'src'),
           }
         },
-        test: {
-          environment: "happy-dom"
-        },
+        // test: {
+        //   environment: "happy-dom"
+        // },
     }
 )
 

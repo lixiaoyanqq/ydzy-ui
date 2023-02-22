@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:16:29
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-17 13:45:01
+ * @LastEditTime: 2023-02-21 10:55:31
 -->
 <template>
     <div>
@@ -30,6 +30,9 @@
         </div>
         <div>
             <yd-button type="text">文字按钮</yd-button>
+        </div>
+        <div>
+            <yd-upload></yd-upload>
         </div>
     </div>
 </template>
