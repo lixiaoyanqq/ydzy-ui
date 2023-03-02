@@ -4,17 +4,12 @@
     "jsx": "preserve",
     "strict": true,
     "target": "ES2015",
+    "suppressImplicitAnyIndexErrors": true,
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "lib": ["esnext", "dom"],
-    "rootDirs": ["./", "./packages/components"],
-    "types": ["unplugin-vue-define-options" /* ... */],
-    "paths": {
-      "@/*": [
-        "packages/components/src/*"
-      ]
-    },
+    "resolveJsonModule": true
   }
 }

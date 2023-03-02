@@ -4,13 +4,17 @@
  * @Author: dbkey
  * @Date: 2023-02-10 17:12:43
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-10 17:13:11
+ * @LastEditTime: 2023-03-01 17:35:12
  */
 import { spawn } from 'child_process'
 
 export default async (command: string, path: string) => {
   //cmd表示命令，args代表参数，如 rm -rf  rm就是命令，-rf就为参数
+  console.log('command',command)
+  console.log('path',path)
   const [cmd, ...args] = command.split(' ')
+  console.log('cmd',cmd)
+  console.log('args',args)
   return new Promise((resolve, reject) => {
       const app = spawn(cmd, args, {
           cwd: path,//执行命令的路径

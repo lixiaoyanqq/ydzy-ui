@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-02-17 11:34:03
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-17 11:41:20
+ * @LastEditTime: 2023-02-28 15:49:22
  */
 import commandLineArgs from 'command-line-args';
 import commandLineUsage from 'command-line-usage';
@@ -68,8 +68,8 @@ const promptsOptions = [
     name: 'template',
     message: 'select a framework',
     choices: [
-      { title: 'kitty-ui', value: 1 },
-      { title: 'kitty-demo', value: 2 }
+      { title: 'ydzy-ui', value: 1 },
+      { title: 'ydzy-demo', value: 2 }
     ]
   }
 ]

@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:16:29
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-21 10:55:31
+ * @LastEditTime: 2023-02-28 14:38:22
 -->
 <template>
     <div>
@@ -32,7 +32,10 @@
             <yd-button type="text">文字按钮</yd-button>
         </div>
         <div>
-            <yd-upload></yd-upload>
+            <!-- <yd-upload></yd-upload> -->
+        </div>
+        <div>
+            <input class="k-input__inner" />
         </div>
     </div>
 </template>

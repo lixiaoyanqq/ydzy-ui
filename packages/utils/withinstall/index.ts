@@ -4,10 +4,9 @@
  * @Author: dbkey
  * @Date: 2023-02-10 15:34:27
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-10 15:36:10
+ * @LastEditTime: 2023-03-01 17:20:12
  */
-import type { App, Plugin } from "vue"
-
+import type { App, Plugin } from 'vue';
 export type SFCWithInstall<T> = T & Plugin
 export default <T>(comp: T) => {
   (comp as SFCWithInstall<T>).install = (app: App) => {
