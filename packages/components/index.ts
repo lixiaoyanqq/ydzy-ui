@@ -4,9 +4,10 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:26:46
  * @LastEditors: dbkey
- * @LastEditTime: 2023-03-01 18:12:24
+ * @LastEditTime: 2023-03-02 11:16:17
  */
 import * as components from './src/index'
+console.log('components',components)
 export * from './src/index'
 import { App } from 'vue'
 export default {

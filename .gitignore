@@ -1,10 +1,6 @@
 node_modules
-**/es
-**/lib
-coverage
-*.log
-examples/dist
-**.d.ts
-/packages/create-ydzy
+es
+lib
+cache
 dist
 .history

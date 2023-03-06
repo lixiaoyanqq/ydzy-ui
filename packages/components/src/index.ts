@@ -4,12 +4,13 @@
  * @Author: dbkey
  * @Date: 2023-02-10 15:54:17
  * @LastEditors: dbkey
- * @LastEditTime: 2023-03-02 10:36:10
+ * @LastEditTime: 2023-03-02 11:16:54
  */
 
-export * from './button';
 export * from './icon';
-export * from './upload'
+export * from './input';
+export * from './button';
+// export * from './upload'
 
 
 // import 'element-plus/dist/index.css'

@@ -4,17 +4,11 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:16:41
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-28 14:29:54
+ * @LastEditTime: 2023-03-06 11:43:07
  */
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import App from './app.vue'
-// import 'ydzy-ui/es/style.less'
-
+// import ydzyui from "@ydzy-ui/components"
 const app = createApp(App)
-
-import ydzyui from "ydzy-ui/packages/components"
-// import { Button } from 'ydzy-ui'
-app.use(ydzyui)
-// app.use(Button)
-
+// app.use(ydzyui)
 app.mount('#app')

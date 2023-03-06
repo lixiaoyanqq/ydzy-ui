@@ -4,12 +4,12 @@
  * @Author: dbkey
  * @Date: 2023-02-08 18:16:29
  * @LastEditors: dbkey
- * @LastEditTime: 2023-02-28 14:38:22
+ * @LastEditTime: 2023-03-06 11:43:26
 -->
 <template>
     <div>
         <div>启动测试</div>
-        <!-- <Button /> -->
+        <!-- <Button />
         <div>
             <yd-button>默认按钮</yd-button>
         </div>
@@ -30,14 +30,15 @@
         </div>
         <div>
             <yd-button type="text">文字按钮</yd-button>
-        </div>
-        <div>
-            <!-- <yd-upload></yd-upload> -->
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
+            <yd-upload></yd-upload>
+        </div> -->
+        <!-- <div>
             <input class="k-input__inner" />
-        </div>
+        </div> -->
     </div>
 </template>
 <script lang="ts" setup>
+// import { Button } from 'ydzyui';
 </script>

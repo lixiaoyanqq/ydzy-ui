@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:ydzy": "gulp -f packages/components/script/build/index.ts",
+    "build:ydzy": "gulp -f packages/components/script/build/index.ts & pnpm run --filter ./packages/utils build",
     "publish:ydzy": "gulp -f packages/components/script/publish/index.ts",
+    "publish:ydzyutils": "gulp -f packages/utils/publish/index.ts",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
     "docs:serve": "pnpm run --filter ./site docs:serve",
     "exm:dev": "pnpm run --filter ./examples dev",
     "test": "pnpm run --filter ./packages/components test",
-    "coverage": "pnpm run --filter ./packages/components coverage"
+    "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+    "lint:style": "stylelint --fix \"packages/components/src/**/*.{css,less}\""
   },
   "type": "module",
   "keywords": [
@@ -21,7 +23,7 @@
     "永鼎致远"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.1",
     "@types/gulp": "^4.0.9",

@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-03-01 18:02:46
  * @LastEditors: dbkey
- * @LastEditTime: 2023-03-01 18:06:43
+ * @LastEditTime: 2023-03-02 11:37:55
  */
 import commandLineArgs from 'command-line-args';
 import commandLineUsage from 'command-line-usage';
@@ -58,8 +58,7 @@ const promptsOptions = [
     name: 'template',
     message: '请选择一个模板',
     choices: [
-      { title: 'kitty-ui', value: 1 },
-      { title: 'easyest', value: 2 }
+      { title: 'ydzy-ui', value: 1 },
     ]
   }
 ];
