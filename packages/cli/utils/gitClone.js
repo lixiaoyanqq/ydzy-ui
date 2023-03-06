@@ -4,7 +4,7 @@
  * @Author: dbkey
  * @Date: 2023-03-01 18:08:27
  * @LastEditors: dbkey
- * @LastEditTime: 2023-03-01 18:09:32
+ * @LastEditTime: 2023-03-06 13:54:03
  */
 import download from 'download-git-repo';
 import chalk from 'chalk';
@@ -21,6 +21,10 @@ export default (remote, name, option) => {
         return;
       }
       downSpinner.succeed(chalk.green('模板下载成功！'));
+      console.log(chalk.green(`cd ${name}\r\n`));
+      console.log(chalk.blue('pnpm install\r\n'));
+      console.log('pnpm run build:ydzy\r\n');
+      console.log('pnpm run exm:dev\r\n');
       resolve();
     });
   });
